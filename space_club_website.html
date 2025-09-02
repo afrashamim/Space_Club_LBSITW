@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Space Club Lbsitw</title>
+</head>
+
+<body>
+    <div class="stars" id="stars"></div>
+
+    <header>
+        <nav>
+            <div class="logo"> 
+                <img src="images/logo.png" alt="Space Club LBSITW Logo" style="height:50px;">
+            </div>
+                <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#execom">Execom</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#newsletters">Newsletters</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <h1>Welcome</h1>
+                <p>Exploring the cosmos, one discovery at a time</p>
+                <a href="#events" onclick="showSection('events')" class="cta-button">Explore Our Events</a>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <h3> Our Mission</h3>
+                    <p>To inspire and educate students about space science, astronomy, and the wonders of the universe
+                        through hands-on activities, workshops, and observations.</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="section">
+            <h2 class="section-title">Events</h2>
+
+            <h3 style="color: #bb86fc; margin: 2rem 0 1rem 0; font-size: 1.5rem;"> Upcoming Events</h3>
+            <div class="grid">
+                <div class="card">
+                    <div class="event-date">Date</div>
+                    <h3>Sample Heading</h3>
+                    <p>Caption</p>
+                    <p><strong>Location:</strong> location</p>
+                    <p><strong>Time:</strong> time</p>
+                </div>
+            </div>
+
+            <h3 style="color: #bb86fc; margin: 3rem 0 1rem 0; font-size: 1.5rem;"> Past Events</h3>
+             
+            <div class="grid">
+                
+                <div class="card">
+                    <div class="event-date">21 July 2025</div>
+                    <div class="event-image">
+                    <img src="images/lunar.jpeg" alt="Lunar"></div>
+                    <h3>Lunar Day Celebration</h3>
+                    <p>Explore the relevance and possibilities of lunar expeditions and be inspired by the legacy of Apollo 11.</p>
+                    <p>Time: 11 AM</p>
+                    <p> Venue:  Main Seminar Hall, LBSITW</p>
+                </div>
+                <div class="card">
+                    <div class="event-date">14 July 2025</div>
+                    <div class="event-image">
+                    <img src="images/debatecompetition.jpeg" alt="Debate"></div>
+                    <h3>Debate Competition</h3>
+                    <p>sample</p>
+                    <p>Time: 12:45PM - 1:15PM</p>
+                    <p> Venue:  Litaa Hall, LBSITW</p>
+                </div>
+                <div class="card">
+                    <div class="event-date">7 June 2025</div>
+                    <div class="event-image">
+                    <img src="images/icrb.jpeg" alt="icrb"></div>
+                    <h3>ICRB Mock Test Series</h3>
+                    <p>Branch Specific Quizzes from previous year ICRB and Gate exams</p>
+                    <p>Time: Every Saturday</p>
+                    <p> Venue:  Online</p>
+                </div>
+                <div class="card">
+                    <div class="event-date">28 March 2025</div>
+                    <div class="event-image">
+                    <img src="images/rose.jpeg" alt="Rose"></div>
+                    <h3>Rose-Reaching Out to Space </h3>
+                    <p>An insightful session with top space experts from ISRO and AeSI. This event offers a unique opportunity to learn about the latest advancements in space technology and civil aviation.</p>
+                    <p>Time: 9AM - 1PM</p>
+                    <p> Venue: Main Seminar Hall, LBSITW</p>
+                </div>
+                <div class="card">
+                    <div class="event-date">20 March 2025</div>
+                    <div class="event-image">
+                    <img src="images/spacehunt.jpeg" alt="Spacehunt"></div>
+                    <h3>Space Hunt</h3>
+                    <p>Online event featuring fun-filled space quizzes and activities</p>
+                    <p>Time: 8PM - 9PM</p>
+                    <p> Venue: Online</p>
+                </div>
+
+                <div class="card">
+                    <div class="event-date">19 March 2025</div>
+                    <div class="event-image">
+                    <img src="images/inauguration.jpeg" alt="Inauguration"></div>
+                    <h3>Space Club '25 Inauguration</h3>
+                    <p>Featuring an exclusive talk session by our esteemed Space club alumni.Connect, learn, and explore the universe of possibilities.</p>
+                    <p>Time: 9AM - 1PM</p>
+                    <p> Venue: Seminar Hall, LBSITW</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ExeCom Section -->
+        <section id="execom" class="section">
+            <h2 class="section-title">Executive Committee</h2>
+             <div class="faculty-card">
+             <div class="card member-card">
+             <div class="member-avatar">
+             <img src="images/resmi.jpeg" alt="Resmi">
+             </div>
+             <h3>Dr.Resmi</h3>
+             <p><strong>Faculty Coordinator</strong></p>
+             <p>Professor, ECE Dept.</p>
+             <p>📧 resmilbs@gmail.com</p>
+             <p>📧 resmi@lbsitw.ac.in</p>
+            </div>
+            </div>    
+            <div class="grid">
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/carolin.jpg" alt="Carolin Suresh">
+                    </div>
+                    <h3>Carolin Suresh</h3>
+                    <p><strong>Coordinator</strong></p>
+                    <p>Final year Electronics & Communication Engineering Student</p>
+                    <p>📧 carolinsuresh04@gmail.com</p>
+                </div>
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/nandana.jpeg" alt="Nandana R P">
+                    </div>
+                    <h3>Nandana R P</h3>
+                    <p><strong>Coordinator</strong></p>
+                    <p>Final year Computer Science & Engineering Student</p>
+                    <p>📧 nandanarp2004@gmail.com</p>
+                </div>
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/varalakshmi.jpg" alt="Varalakshmi K G">
+                    </div>
+                    <h3>Varalakshmi K G</h3>
+                    <p><strong>Coordinator</strong></p>
+                    <p>Final year Information Technology Student</p>
+                    <p>📧 varada7180@gmail.com</p>
+                </div>
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/ameenamol.jpg" alt="Ameenamol S">
+                    </div>
+                    <h3>Ameenamol S</h3>
+                    <p><strong>Co-Lead</strong></p>
+                    <p>Final year Electronics & Communication Engineering Student</p>
+                    <p>📧 ameenamols3@gmail.com</p>
+                </div>
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/sangeetha.jpg" alt="Sangeetha G S">
+                    </div>
+                    <h3>Sangeetha G S</h3>
+                    <p><strong>Co-Lead</strong></p>
+                    <p>Final year Computer Science & Engineering Student</p>
+                    <p>📧 sangeethasandhya468@gmail.com</p>
+                </div>
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/anchitha.jpg" alt="Anchitha C M">
+                    </div>
+                    <h3>Anchitha C M</h3>
+                    <p><strong>Content Lead</strong></p>
+                    <p>Final year Electronics & Computer Engineering Student</p>
+                    <p>📧 anchuap@gmail.com</p>
+                </div>
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/gopika.jpg" alt="Gopika S Nair">
+                    </div>
+                    <h3>Gopika S Nair</h3>
+                    <p><strong>Content Team</strong></p>
+                    <p>Third year Computer Science & Engineering Student</p>
+                    <p>📧 gopikakumar333@gmail.com</p>
+                </div>
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/gowri.jpg" alt="Gowri S B">
+                    </div>
+                    <h3>Gowri S B</h3>
+                    <p><strong>Content Team</strong></p>
+                    <p>Third year Computer Science & Engineering Student</p>
+                    <p>📧 need to update</p>
+                </div>
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/afra.jpeg" alt="Afra B">
+                    </div>
+                    <h3>Afra B</h3>
+                    <p><strong>Website Lead</strong></p>
+                    <p>Third year Computer Science & Engineering Student</p>
+                    <p>📧 afrashamim@gmail.com</p>
+                </div>
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/ardhana.jpg" alt="Ardhana S Anil">
+                    </div>
+                    <h3>Ardhana S Anil</h3>
+                    <p><strong>Website Team</strong></p>
+                    <p>Third year Computer Science & Engineering Student</p>
+                    <p>📧 ardhanasanil123@gmail.com</p>
+                </div>
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/krishna.jpg" alt="Krishna P">
+                    </div>
+                    <h3>Krishna P</h3>
+                    <p><strong>Website Team</strong></p>
+                    <p>Third year Computer Science & Engineering Student</p>
+                    <p>📧 krishnaaa2304@gmail.com</p>
+                </div>
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/nandanavenu.jpg" alt="Nandana Venu Gopal">
+                    </div>
+                    <h3>Nandana Venu Gopal</h3>
+                    <p><strong>Website Team</strong></p>
+                    <p>Second year Electronics & Communication Engineering Student</p>
+                    <p>📧 nandanavrg2006@gmail.com</p>
+                </div>
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/lekshmi.jpg" alt="Lekshmi Ram S">
+                    </div>  
+                    <h3>Lekshmi Ram S</h3>
+                    <p><strong>Design Lead</strong></p>
+                    <p>Final year Electronics & Communication Engineering Student</p>
+                    <p>📧 leppiram@gmail.com</p>
+                </div>
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/adithyad.jpg" alt="Adithya">
+                    </div>  
+                    <h3>Adithya D</h3>
+                    <p><strong>Design Team</strong></p>
+                    <p>Second year Electronics & Communication Engineering Student</p>
+                    <p>📧 need to update</p>
+                </div>
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/sougandhika.jpg" alt="sougandhika">
+                    </div>  
+                    <h3>Sougandhika</h3>
+                    <p><strong>Design Team</strong></p>
+                    <p>Third Year Computer Science & Engineering Student</p>
+                    <p>📧 need to update</p>
+                </div>
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/srinanda.jpg" alt="Srinanda">
+                    </div>  
+                    <h3>Srinanda C S</h3>
+                    <p><strong>Design Team</strong></p>
+                    <p>Third Year Computer Science & Engineering Student</p>
+                    <p>📧 need to update</p>
+                </div>
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/aleena.jpg" alt="Aleena C Darvin">
+                    </div>
+                    <h3>Aleena C Darvin</h3>
+                    <p><strong>Documentation Team</strong></p>
+                    <p>Third year Computer Science & Engineering Student</p>
+                    <p>📧 aleenadarvin@gmail.com</p>
+                </div>
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/nivya.jpg" alt="Nivya Sudheesh">
+                    </div>
+                    <h3>Nivya Sudheesh</h3>
+                    <p><strong>Documentation Team</strong></p>
+                    <p>Third year Computer Science & Engineering Student</p>
+                    <p>📧 nivyasudheesh@gmail.com</p>
+                </div>
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/arya.jpg" alt="Arya SS">
+                    </div>
+                    <h3>Arya SS</h3>
+                    <p><strong>Editorial Team</strong></p>
+                    <p>Third year Computer Science & Engineering Student</p>
+                    <p>📧 aryass1206@gmail.com</p>
+                </div>
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/diya.jpg" alt="Diya Bhatt">
+                    </div>
+                    <h3>Diya Bhatt</h3>
+                    <p><strong>Editorial Team</strong></p>
+                    <p>Third year Electronics & Computer Engineering Student</p>
+                    <p>📧 diyabhatta2005@gmail.com</p>
+                </div>
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/sreelekshmi.jpg" alt="Sreelekshmi J">
+                    </div>
+                    <h3>Sreelekshmi J</h3>
+                    <p><strong>Editorial Team</strong></p>
+                    <p>Third year Electronics & Communication Engineering Student</p>
+                    <p>📧 need to update</p>
+                </div>
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/meenakshi.jpg" alt="Meenakshi A M">
+                    </div>
+                    <h3>Meenakshi A M</h3>
+                    <p><strong>Media Lead</strong></p>
+                    <p>Final year Information Technology Student</p>
+                    <p>📧 meenakshiam2023@gmail.com</p>
+                </div>
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/aliya.jpg" alt="Aliya M">
+                    </div>
+                    <h3>Aliya M</h3>
+                    <p><strong>Media Team</strong></p>
+                    <p>Third year Computer Science & Engineering Student</p>
+                    <p>📧 need to update</p>
+                </div>
+                <div class="card member-card">
+                    <div class="member-avatar">
+                    <img src="images/mahima.jpg" alt="Mahima P Nair">
+                    </div>
+                    <h3>Mahima P Nair</h3>
+                    <p><strong>Media Team</strong></p>
+                    <p>Third year Computer Science & Engineering Student</p>
+                    <p>📧 need to update</p>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+  <h2 class="section-title">Our Projects</h2>
+  <div class="grid">
+    <div class="card project-card">
+      <h2 style="color: #8674cf">WESAT - Women Engineered Satellite</h2>
+      <div class="project-content">
+        <div class="text">
+          <p>
+            WESAT (Women Engineered SATellite) is a student-developed payload created at the
+            Lal Bahadur Shastri Institute of Technology for Women (LBSITW), led and executed by
+            an all-women team. Its primary mission is to directly measure ultraviolet (UV)
+            radiation and solar irradiance in space and compare those measurements with ground
+            readings from a college ground-station in Thiruvananthapuram. WESAT was launched as
+            a rideshare payload on ISRO’s PSLV-C58 mission on 1 January 2024.
+          </p>
+        </div>
+        <div class="image">
+          <img src="images/wesat1.jpg" alt="WESAT Satellite">
+        </div>
+      </div>
+
+      <div class="project-content">
+        <div class="text">
+          <h3>Science Goals — Why measure UV from a tiny satellite?</h3>
+          <p>
+            Produce point-source (direct) measurements of UV intensity and solar irradiance above
+            the atmosphere, rather than relying on multispectral/spectroradiometer-derived maps.
+            This helps estimate how much UV is filtered by the atmosphere and can inform climate
+            studies and UV exposure alerts for Kerala. <br>Compare space measurements with simultaneous ground measurements (from their campus
+            ground station) to compute filtering rates and better understand local atmospheric
+            effects (ozone, aerosols, clouds).<br>
+          </p>
+        </div>
+        <div class="image">
+          <img src="images/wesat2.jpg" alt="Science Goals">
+        </div>
+      </div>
+
+
+      <div class="project-content">
+        <div class="text">
+          <h3>Key Technical Highlights</h3>
+          <p>
+            Instruments: the payload carries UV sensors (UVA band focus) and solar irradiance sensors (pyranometer-type). The sensors output small voltages (mV) that are converted to power (W/m²) and used to compute a UV Index (UVI) via a conversion formula the team gives in its technical report. <br>
+          </p>
+          <p>
+            Self-powered measurement concept: the WESAT payload is designed so its measurement elements generate the electrical signal directly from incident sunlight (via photovoltaic effect + optical filtering). Because of this, the payload did not require powering up from a battery once deployed — it began reporting telemetry as soon as it was exposed to sunlight during ascent (even before reaching the final POEM orbit). That is a claimed distinctive feature. <br>
+            Dynamic range: reported instrument dynamic range supports up to ~2000 W/m² for solar irradiance and ~120 W/m² for UV (giving a computed UVI range up to ~31). The report gives practical telemetry examples (space UVI readings far exceed simultaneous ground UVI because the atmosphere attenuates radiation).
+          </p>
+        </div>
+        <div class="image">
+          <img src="images/wesat3.jpeg" alt="Technical Highlights">
+        </div>
+      </div>
+
+      <div class="project-content">
+        <div class="text">
+          <h3>Why WESAT Matters</h3>
+          <p>
+            Science & Policy: provides localized UV/solar irradiance datasets for Kerala. <br>
+            Education: a hands-on student satellite project fostering strong STEM skills. <br>
+            Representation: a women-led payload design milestone, symbolizing gender equity in space. <br><br>
+            <p>Visit our WESAT website: <a href="https://wesat.in" target="_blank">https://wesat.in/</a></p>
+          </p>
+        </div>
+        <div class="image">
+          <img src="images/wesat4.jpeg" alt="Why WESAT Matters">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+        <!-- Newsletters Section -->
+        <section id="newsletters" class="section">
+            <h2 class="section-title">Newsletters</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Title</h3>
+                    <div class="newsletter-item">
+                        <h4>Title1</h4>
+                        <div class="newsletter-date">Date</div>
+                        <p>NASA announces new timeline for lunar landing missions and crew selection process.</p>
+                    </div>
+                    <div class="newsletter-item">
+                        <h4>Club Achievements</h4>
+                        <div class="newsletter-date">December 1, 2024</div>
+                        <p>Our CubeSat project received recognition at the National Student Space Conference.</p>
+                    </div>
+                    <div class="newsletter-item">
+                        <h4>Upcoming Celestial Events</h4>
+                        <div class="newsletter-date">December 1, 2024</div>
+                        <p>Don't miss the Geminids meteor shower peak on December 13-14!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>📰 November 2024 Edition</h3>
+                    <div class="newsletter-item">
+                        <h4>Mars Sample Return Mission</h4>
+                        <div class="newsletter-date">November 15, 2024</div>
+                        <p>ESA and NASA collaboration brings us closer to returning Martian samples to Earth.</p>
+                    </div>
+                    <div class="newsletter-item">
+                        <h4>Member Spotlight</h4>
+                        <div class="newsletter-date">November 15, 2024</div>
+                        <p>Interview with senior member who secured internship at SpaceX.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>📰 October 2024 Edition</h3>
+                    <div class="newsletter-item">
+                        <h4>Europa Clipper Launch</h4>
+                        <div class="newsletter-date">October 20, 2024</div>
+                        <p>Successful launch of NASA's mission to Jupiter's icy moon Europa.</p>
+                    </div>
+                    <div class="newsletter-item">
+                        <h4>Photography Contest Results</h4>
+                        <div class="newsletter-date">October 20, 2024</div>
+                        <p>Amazing astrophotography submissions from our talented members.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2 class="section-title">About Us</h2>
+            <div class="card" style="max-width: 800px; margin: 0 auto;">
+                <h3>About Us</h3>
+                <p>Space Club LBSITW is dedicated to exploring space technologies, innovation, and scientific curiosity. 
+                    From satellite simulations and rocketry basics to coding space-themed apps, we create hands-on experiences that connect engineering and imagination. It’s where ideas orbit and bold thinkers launch their learning.</p>
+
+                <h3 style="margin-top: 2rem;">Contact Information</h3>
+                <p><strong>Location:</strong> LBS Institute Of Technology For Women, Poojappura, Trivandrum<br>
+                    <strong>Email:</strong> emailid<br>
+                    
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Space Club Lbsitw. Reaching for the stars together.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
